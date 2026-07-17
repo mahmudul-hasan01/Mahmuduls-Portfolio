@@ -44,59 +44,6 @@ reach the nav after that:
    in `app/layout.tsx`) and opens the same overlay — so navigation stays
    reachable everywhere, on any device, after the top nav scrolls out of view.
 
-## Structure
-
-```
-app/
-  layout.tsx        Root layout, loads fonts, wraps app in <SmoothScroll>,
-                     mounts the site-wide <ScrollMenuButton>
-  page.tsx           Home page, composes all home sections
-  about/page.tsx      About page
-  work/page.tsx        Work / archive page
-  globals.css           Base styles, marquee keyframes, grain texture
-components/
-  Navbar.tsx           Static (non-fixed) header + hamburger trigger
-  MobileMenu.tsx         Full-screen nav overlay, GSAP slide/stagger
-  ScrollMenuButton.tsx     Floating menu button, fades in on scroll (all
-                           breakpoints), opens its own MobileMenu instance
-  Hero.tsx                Split-word headline animation + scroll-velocity skew
-                           distortion + SVG feTurbulence/feDisplacementMap
-                           "resolve out of noise" effect on the real portrait +
-                           looping details marquee (role/location from
-                           data/profile.ts)
-  About.tsx                Homepage teaser: scroll-scrubbed line reveal + CTA
-  AboutIntro.tsx             /about hero: name, bio, real portrait + stat card
-  Skills.tsx                  Categorized skill chips (Frontend / Backend /
-                               Database / Tools), scroll-revealed
-  Experience.tsx               /about: work history timeline + education,
-                                certifications, languages, soft skills,
-                                extracurricular — all from data/profile.ts
-  SelectedWork.tsx               Homepage's project table; hover preview
-                                 follows the cursor (GSAP quickTo), shows
-                                 tech-stack chips
-  WorkExplorer.tsx                /work page: filter tabs, list/grid toggle,
-                                   full archive, hover preview
-  ScrollReveal.tsx                 Pinned panels per featured project: intro
-                                    text fades out while a color panel scales
-                                    from a small rounded frame to fullscreen
-                                    with a centered title
-  Contact.tsx                       Dark CTA section with real email/phone/
-                                     location, grain overlay, reveal
-  Footer.tsx                         Contact links + infinite name marquee
-  SmoothScroll.tsx                    Lenis provider, synced with GSAP ticker
-  Cursor.tsx                           Custom ring + dot cursor (desktop only)
-lib/
-  gsap.ts               Central gsap + ScrollTrigger registration
-data/
-  profile.ts             Name, role, contact, bio, experience, education,
-                          certifications, languages, soft skills, skill groups
-  projects.ts             The four real CV projects (Sarmeadors, Tag Growth,
-                           EZ Book Solution, Redefine Gaming) with tech stack,
-                           features, and category-based filter tab helpers
-public/images/
-  mahmudul-portrait.jpg    Real portrait extracted from the CV, used in the
-                            Hero and the About page
-```
 
 ## Known placeholders to fill in
 
