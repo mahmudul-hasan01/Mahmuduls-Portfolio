@@ -60,9 +60,17 @@ export default function Skills() {
         });
       });
 
-      // Set initial states for all chips - hidden at outer orbit
+      // Set initial states for all chips - hidden at outer orbit.
+      // IMPORTANT: xPercent/yPercent: -50 replicate the CSS
+      // `transform: translate(-50%, -50%)` centering. Once GSAP owns the
+      // transform (because we animate x/y), it must be told about this
+      // offset explicitly, or every chip's top-left corner (not its
+      // center) gets placed on the circle math, throwing the whole ring
+      // off-center by half a chip's width/height.
       allChips.forEach((chip) => {
         gsap.set(chip, {
+          xPercent: -50,
+          yPercent: -50,
           opacity: 0,
           scale: 0,
           x: 0,
@@ -127,9 +135,10 @@ export default function Skills() {
           getResponsiveRadius(totalChips);
         const outerRadius = finalRadius * outerMultiplier;
 
-        // Pre-calculate final and starting positions
-        // For Backend (groupIndex 1), shift starting angle so items aren't
-        // positioned at the extreme left (avoids Socket.IO being cut off)
+        // Pre-calculate final and starting positions.
+        // Angles are evenly distributed (360 / totalChips) around the
+        // circle starting at the top (-90deg), so every chip sits exactly
+        // on the ring with no left/right bias.
         const angleOffset = groupIndex === 1 ? Math.PI * 0.35 : 0;
         chipsArray.forEach((chip, i) => {
           const angle =
@@ -145,11 +154,15 @@ export default function Skills() {
           chip.dataset.angle = angle.toString();
         });
 
-        // Set initial chip positions at outer radius (invisible)
+        // Set initial chip positions at outer radius (invisible).
+        // xPercent/yPercent kept at -50 so each chip is truly centered
+        // on its (startX, startY) point regardless of its own width.
         chipsArray.forEach((chip) => {
           const startX = parseFloat(chip.dataset.startX || "0");
           const startY = parseFloat(chip.dataset.startY || "0");
           gsap.set(chip, {
+            xPercent: -50,
+            yPercent: -50,
             x: startX,
             y: startY,
             scale: 0,
@@ -199,6 +212,8 @@ export default function Skills() {
           gsap.set(orbitRing, {
             width: ringDiameter,
             height: ringDiameter,
+            xPercent: -50,
+            yPercent: -50,
           });
           tl.to(
             orbitRing,
@@ -244,10 +259,14 @@ export default function Skills() {
           const midX = Math.cos(midAngle) * midRadius;
           const midY = Math.sin(midAngle) * midRadius;
 
-          // Move from outer to mid point (spiral inward curve)
+          // Move from outer to mid point (spiral inward curve).
+          // xPercent/yPercent: -50 is re-asserted on every tween that
+          // touches x/y so the centering offset can never be dropped.
           tl.to(
             chip,
             {
+              xPercent: -50,
+              yPercent: -50,
               x: midX,
               y: midY,
               scale: 1,
@@ -258,10 +277,14 @@ export default function Skills() {
             startPosition + 0.06,
           );
 
-          // Settle into final circle position
+          // Settle into final circle position — this is the exact point
+          // on the ring, centered, for every chip regardless of text
+          // width.
           tl.to(
             chip,
             {
+              xPercent: -50,
+              yPercent: -50,
               x: finalX,
               y: finalY,
               scale: 1,
@@ -340,6 +363,8 @@ export default function Skills() {
           tl.to(
             chip,
             {
+              xPercent: -50,
+              yPercent: -50,
               x: scatterX,
               y: scatterY,
               opacity: 0,
@@ -357,6 +382,8 @@ export default function Skills() {
           () => {
             groupChips.forEach((chip) => {
               gsap.set(chip, {
+                xPercent: -50,
+                yPercent: -50,
                 x: 0,
                 y: 0,
                 scale: 0,
@@ -447,14 +474,17 @@ export default function Skills() {
             <div className="relative w-full h-full">
               {techSkills.map((group, groupIndex) => (
                 <div key={group.label}>
-                  {/* Orbit ring - circular track around which skills orbit */}
+                  {/* Orbit ring - circular track around which skills orbit.
+                      Positioning uses left/top: 50% for the anchor point;
+                      GSAP owns the centering (xPercent/yPercent: -50) once
+                      the timeline starts animating it, so no separate
+                      inline `transform` is set here. */}
                   <div
                     className="orbit-ring absolute pointer-events-none"
                     data-group={groupIndex}
                     style={{
                       left: "50%",
                       top: "50%",
-                      transform: "translate(-50%, -50%)",
                       borderRadius: "50%",
                       border: "1.5px dashed rgba(59,130,246,0.25)",
                       opacity: 0,
@@ -471,7 +501,6 @@ export default function Skills() {
                           visibility: "visible",
                           left: "50%",
                           top: "50%",
-                          transform: "translate(-50%, -50%)",
                           whiteSpace: "nowrap",
                         }}
                       >

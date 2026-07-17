@@ -224,7 +224,7 @@ export default function NoMoreBoringDesign() {
         <div className="absolute inset-0 bg-[radial-gradient(#d8d5cc_1px,transparent_1px)] [background-size:16px_16px] opacity-40 pointer-events-none" />
 
         {/* Scattered Project Cards */}
-        <div className="absolute inset-0 w-full h-full max-w-[1600px] mx-auto hidden md:block">
+        <div className="absolute inset-0 w-full h-full max-w-[1600px] mx-auto ">
           {/* Card 1: Top Left - Green Slate Dashboard */}
           <div
             ref={card1}
