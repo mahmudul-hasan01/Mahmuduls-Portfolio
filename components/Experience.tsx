@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import { gsap, ScrollTrigger } from "@/lib/gsap";
+import { gsap } from "@/lib/gsap";
 import {
   experience,
   education,
@@ -25,7 +25,7 @@ export default function Experience() {
           duration: 0.8,
           ease: "power3.out",
           scrollTrigger: { trigger: sectionRef.current, start: "top 80%" },
-        }
+        },
       );
       gsap.utils.toArray<HTMLElement>(".exp-item").forEach((item) => {
         gsap.fromTo(
@@ -37,7 +37,7 @@ export default function Experience() {
             duration: 0.6,
             ease: "power3.out",
             scrollTrigger: { trigger: item, start: "top 90%" },
-          }
+          },
         );
       });
       gsap.utils.toArray<HTMLElement>(".side-card").forEach((card, i) => {
@@ -51,7 +51,7 @@ export default function Experience() {
             ease: "power3.out",
             delay: i * 0.05,
             scrollTrigger: { trigger: card, start: "top 92%" },
-          }
+          },
         );
       });
     }, sectionRef);
@@ -88,7 +88,9 @@ export default function Experience() {
                     &middot; {job.location}
                   </span>
                 </h3>
-                <p className="text-sm font-medium text-ink/60 mt-1">{job.role}</p>
+                <p className="text-sm font-medium text-ink/60 mt-1">
+                  {job.role}
+                </p>
                 <ul className="mt-4 space-y-2">
                   {job.bullets.map((b) => (
                     <li
@@ -154,7 +156,8 @@ export default function Experience() {
                   key={l.name}
                   className="rounded-full border border-ink/20 px-3 py-1.5 text-xs text-ink/80"
                 >
-                  {l.name} <span className="text-muted">&middot; {l.level}</span>
+                  {l.name}{" "}
+                  <span className="text-muted">&middot; {l.level}</span>
                 </span>
               ))}
             </div>
