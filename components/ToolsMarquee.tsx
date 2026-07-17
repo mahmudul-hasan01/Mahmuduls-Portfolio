@@ -11,7 +11,7 @@ const rotations = ["-6deg", "6deg"];
 
 export default function ToolsMarquee() {
   return (
-    <section className="relative w-full min-h-screen bg-[#f1efe9] flex flex-col items-center justify-center overflow-hidden px-4 py-20">
+    <section className="relative w-full  h-80 md:h-[420px] lg:h-[520px] xl:h-screen bg-[#f1efe9] flex flex-col items-center justify-center overflow-hidden px-4 py-20">
       {/* Section label */}
       <div className="text-center space-y-2 mb-16 sm:mb-20 md:mb-24 relative z-10">
         <span className="inline-block text-[10px] xs:text-xs font-mono uppercase tracking-widest px-3 py-1 sm:px-4 sm:py-1.5 rounded-full text-white bg-ink">
@@ -23,7 +23,7 @@ export default function ToolsMarquee() {
       </div>
 
       {/* X-crossed marquee stack */}
-      <div className="relative w-full max-w-7xl mx-auto h-[220px] sm:h-[280px] md:h-[340px]">
+      <div className="relative w-full  mx-auto h-[220px] sm:h-[280px] md:h-[340px]">
         {dbAndTools.map((group, index) => (
           <div
             key={group.label}

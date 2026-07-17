@@ -501,7 +501,7 @@ export default function Skills() {
         </div>
 
         {/* Progress indicator - hidden on mobile/tablet */}
-        <div className="absolute right-4 sm:right-8 top-1/2 -translate-y-1/2 z-20 hidden md:flex flex-col items-end gap-4">
+        <div className="absolute right-4 sm:right-8 top-1/2 -translate-y-1/2 z-20 hidden lg:flex flex-col items-end gap-4">
           {techSkills.map((group, i) => (
             <div key={i} className="flex items-center gap-3">
               <span className="text-[9px] font-mono tracking-widest">
