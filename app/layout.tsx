@@ -39,6 +39,30 @@ export const metadata: Metadata = {
   title: "Mahmudul Hasan — Full Stack Developer",
   description:
     "Full Stack Developer specializing in React.js, Next.js, and the MERN stack. Building responsive, production-ready web applications from Patuakhali, Barisal.",
+  openGraph: {
+    title: "Mahmudul Hasan — Full Stack Developer",
+    description:
+      "Full Stack Developer specializing in React.js, Next.js, and the MERN stack. Building responsive, production-ready web applications from Patuakhali, Barisal.",
+    url: "https://mahmudulhasan.vercel.app",
+    siteName: "Mahmudul Hasan",
+    images: [
+      {
+        url: "https://mahmudulhasan.vercel.app/images/mahmudul-portrait.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Mahmudul Hasan — Full Stack Developer",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Mahmudul Hasan — Full Stack Developer",
+    description:
+      "Full Stack Developer specializing in React.js, Next.js, and the MERN stack. Building responsive, production-ready web applications from Patuakhali, Barisal.",
+    images: ["https://mahmudulhasan.vercel.app/images/mahmudul-portrait.jpg"],
+  },
 };
 
 export default function RootLayout({
