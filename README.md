@@ -75,5 +75,3 @@ reach the nav after that:
   `Hero.tsx` listens to for its ambient skew effect.
 - Every scroll-triggered animation lives inside `gsap.context()` + a cleanup
   `ctx.revert()` in the component's `useEffect` return, so it's safe under
-  React Strict Mode and on route change.
-- `prefers-reduced-motion` is respected globally via `globals.css`.
