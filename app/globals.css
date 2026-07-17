@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: #f1efe9;
+}
+
+body {
+  background: #f1efe9;
+  color: #121210;
+  overscroll-behavior: none;
+}
+
+::selection {
+  background: #121210;
+  color: #f1efe9;
+}
+
+/* thin scrollbar, keeps the editorial feel */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1efe9;
+}
+::-webkit-scrollbar-thumb {
+  background: #121210;
+  border: 3px solid #f1efe9;
+  border-radius: 999px;
+}
+
+/* ---------- Marquee ---------- */
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 28s linear infinite;
+}
+.marquee-track.reverse {
+  animation-direction: reverse;
+}
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* ---------- Grain overlay ---------- */
+.grain {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.5;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.35'/%3E%3C/svg%3E");
+}
+
+/* ---------- Hero split text ---------- */
+.split-line {
+  overflow: hidden;
+  display: block;
+}
+.split-word {
+  display: inline-block;
+  will-change: transform, filter;
+}
+
+/* ---------- Word-mark cursor rail for project rows ---------- */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
