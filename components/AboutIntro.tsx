@@ -19,12 +19,19 @@ export default function AboutIntro() {
           ease: "power4.out",
           stagger: 0.08,
           delay: 0.1,
-        }
+        },
       );
       gsap.fromTo(
         ".about-copy",
         { opacity: 0, y: 16 },
-        { opacity: 1, y: 0, duration: 0.8, ease: "power3.out", delay: 0.5, stagger: 0.1 }
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.8,
+          ease: "power3.out",
+          delay: 0.5,
+          stagger: 0.1,
+        },
       );
       gsap.fromTo(
         ".about-photo",
@@ -38,7 +45,7 @@ export default function AboutIntro() {
             trigger: ".about-photos",
             start: "top 85%",
           },
-        }
+        },
       );
     }, rootRef);
     return () => ctx.revert();
@@ -79,7 +86,7 @@ export default function AboutIntro() {
           </span>
           <div>
             <span className="font-grotesk font-medium text-5xl md:text-6xl block leading-none">
-              1+
+              2+
             </span>
             <span className="text-sm text-paper/70 mt-2 block">
               Year building production web apps across agencies in Dhaka

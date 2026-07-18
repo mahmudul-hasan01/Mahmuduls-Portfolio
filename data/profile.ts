@@ -9,11 +9,11 @@ export const profile = {
   email: "mahamudul2018@gmail.com",
   github: "https://github.com/mahmudul-hasan01",
   linkedin: "https://linkedin.com/in/mahmudul-hasan-66331332b",
-  bio: "Passionate Front-End Developer with expertise in React.js, JavaScript, and Tailwind CSS, dedicated to building responsive and user-friendly web applications. Eager to leverage my skills in MERN stack development to create efficient and innovative digital solutions that enhance user experience.",
+  bio: "Front-End Developer with expertise in React.js, Next.js, and TypeScript, focused on building high-performance, accessible web applications. Experienced in translating complex design requirements into clean, maintainable code that delivers measurable business impact.",
   bioShort:
     "I design and build modern digital experiences that blend design and code.",
   bioSecondary:
-    "Since Aug 2024 I've worked as a front-end developer with agencies in Dhaka, shipping production SaaS platforms, marketplaces, and interactive sites used by real businesses. Committed to continuous learning and contributing to dynamic projects.",
+    "Since August 2024, I've been shipping production-grade SaaS platforms, marketplaces, and interactive experiences for agencies in Dhaka. My work spans the full front-end spectrum — from pixel-perfect UI implementation to performance optimization and API integration.",
 };
 
 export type Experience = {
