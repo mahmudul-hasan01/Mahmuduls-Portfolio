@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/images/mahmudul-portrait.jpg",
+        url: "/mahmudul-portrait.jpg",
         width: 600,
         height: 300,
         alt: "Mahmudul Hasan Logo",
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     title: "Mahmudul Hasan — Full Stack Developer",
     description:
       "Full Stack Developer specializing in React.js, Next.js, and the MERN stack. Building responsive, production-ready web applications from Dhaka, Bangladesh.",
-    images: ["/images/mahmudul-portrait.jpg"],
+    images: ["/mahmudul-portrait.jpg"],
   },
 };
 
@@ -78,7 +78,7 @@ export const metadata: Metadata = {
 //     siteName: "Mahmudul Hasan",
 //     images: [
 //       {
-//         url: "/images/mahmudul-portrait.jpg",
+//         url: "/mahmudul-portrait.jpg",
 //         width: 1200,
 //         height: 630,
 //         alt: "Mahmudul Hasan — Full Stack Developer",
@@ -92,7 +92,7 @@ export const metadata: Metadata = {
 //     title: "Mahmudul Hasan — Full Stack Developer",
 //     description:
 //       "Full Stack Developer specializing in React.js, Next.js, and the MERN stack. Building responsive, production-ready web applications from Dhaka, Bangladesh.",
-//     images: ["/images/mahmudul-portrait.jpg"],
+//     images: ["/mahmudul-portrait.jpg"],
 //   },
 // };
 
