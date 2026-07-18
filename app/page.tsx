@@ -5,7 +5,6 @@ import NoMoreBoringDesign from "@/components/NoMoreBoringDesign";
 import Skills from "@/components/Skills";
 import ToolsMarquee from "@/components/ToolsMarquee";
 import SelectedWork from "@/components/SelectedWork";
-import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Cursor from "@/components/Cursor";
 

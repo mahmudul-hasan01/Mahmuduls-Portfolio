@@ -2,7 +2,6 @@
 
 import { useEffect, useRef } from "react";
 import { gsap } from "@/lib/gsap";
-import Link from "next/link";
 import { useContactForm } from "./ContactFormWrapper";
 
 export default function NoMoreBoringDesign() {

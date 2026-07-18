@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     siteName: "Mahmudul Hasan",
     images: [
       {
-        url: "https://mahmuduls-portfolio.vercel.app/images/mahmudul-portrait.jpg",
+        url: "/images/mahmudul-portrait.jpg",
         width: 1200,
         height: 630,
         alt: "Mahmudul Hasan — Full Stack Developer",
@@ -61,9 +61,7 @@ export const metadata: Metadata = {
     title: "Mahmudul Hasan — Full Stack Developer",
     description:
       "Full Stack Developer specializing in React.js, Next.js, and the MERN stack. Building responsive, production-ready web applications from Patuakhali, Barisal.",
-    images: [
-      "https://mahmuduls-portfolio.vercel.app/images/mahmudul-portrait.jpg",
-    ],
+    images: ["/images/mahmudul-portrait.jpg"],
   },
 };
 
