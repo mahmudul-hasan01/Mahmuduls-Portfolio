@@ -38,32 +38,63 @@ const grotesk = Space_Grotesk({
 export const metadata: Metadata = {
   title: "Mahmudul Hasan — Full Stack Developer",
   description:
-    "Full Stack Developer specializing in React.js, Next.js, and the MERN stack. Building responsive, production-ready web applications from Patuakhali, Barisal.",
+    "Full Stack Developer specializing in React.js, Next.js, and the MERN stack. Building responsive, production-ready web applications from Dhaka, Bangladesh.",
+  metadataBase: new URL("https://mahmuduls-portfolio.vercel.app"),
   openGraph: {
     title: "Mahmudul Hasan — Full Stack Developer",
     description:
-      "Full Stack Developer specializing in React.js, Next.js, and the MERN stack. Building responsive, production-ready web applications from Patuakhali, Barisal.",
-    url: "https://mahmuduls-portfolio.vercel.app",
+      "Full Stack Developer specializing in React.js, Next.js, and the MERN stack. Building responsive, production-ready web applications from Dhaka, Bangladesh.",
+    url: "/",
     siteName: "Mahmudul Hasan",
+    type: "website",
     images: [
       {
         url: "/images/mahmudul-portrait.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Mahmudul Hasan — Full Stack Developer",
+        width: 600,
+        height: 300,
+        alt: "Mahmudul Hasan Logo",
       },
     ],
-    locale: "en_US",
-    type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
     title: "Mahmudul Hasan — Full Stack Developer",
     description:
-      "Full Stack Developer specializing in React.js, Next.js, and the MERN stack. Building responsive, production-ready web applications from Patuakhali, Barisal.",
+      "Full Stack Developer specializing in React.js, Next.js, and the MERN stack. Building responsive, production-ready web applications from Dhaka, Bangladesh.",
     images: ["/images/mahmudul-portrait.jpg"],
   },
 };
+
+// export const metadata: Metadata = {
+//   title: "Mahmudul Hasan — Full Stack Developer",
+//   description:
+//     "Full Stack Developer specializing in React.js, Next.js, and the MERN stack. Building responsive, production-ready web applications from Dhaka, Bangladesh.",
+//   openGraph: {
+//     title: "Mahmudul Hasan — Full Stack Developer",
+//     description:
+//       "Full Stack Developer specializing in React.js, Next.js, and the MERN stack. Building responsive, production-ready web applications from Dhaka, Bangladesh.",
+//     url: "https://mahmuduls-portfolio.vercel.app",
+//     siteName: "Mahmudul Hasan",
+//     images: [
+//       {
+//         url: "/images/mahmudul-portrait.jpg",
+//         width: 1200,
+//         height: 630,
+//         alt: "Mahmudul Hasan — Full Stack Developer",
+//       },
+//     ],
+//     locale: "en_US",
+//     type: "website",
+//   },
+//   twitter: {
+//     card: "summary_large_image",
+//     title: "Mahmudul Hasan — Full Stack Developer",
+//     description:
+//       "Full Stack Developer specializing in React.js, Next.js, and the MERN stack. Building responsive, production-ready web applications from Dhaka, Bangladesh.",
+//     images: ["/images/mahmudul-portrait.jpg"],
+//   },
+// };
 
 export default function RootLayout({
   children,
