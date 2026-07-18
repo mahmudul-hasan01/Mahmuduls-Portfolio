@@ -68,7 +68,7 @@ reach the nav after that:
   screenshots into `public/` and swap the markup in `SelectedWork.tsx` /
   `WorkExplorer.tsx` / `ScrollReveal.tsx` if you'd rather show real images.
 
-## Notes on the motion system
+## Notes on the motion systems
 
 - `SmoothScroll.tsx` initializes Lenis once at the root and dispatches a
   `lenis-scroll` window event with the current scroll velocity, which
