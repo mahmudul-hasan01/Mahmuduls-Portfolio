@@ -72,6 +72,41 @@ body {
   will-change: transform, filter;
 }
 
+@keyframes orbit-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.orbit-ring {
+  position: absolute;
+  inset: 0;
+  animation: orbit-spin 18s linear infinite;
+}
+
+.orbit-word {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-size: 7px;
+  font-family: var(--font-mono), monospace;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(18, 18, 16, 0.72);
+  white-space: nowrap;
+  transform-origin: center center;
+}
+
+@media (min-width: 768px) {
+  .orbit-word {
+    font-size: 8px;
+    letter-spacing: 0.14em;
+  }
+}
+
 /* ---------- Word-mark cursor rail for project rows ---------- */
 .no-scrollbar::-webkit-scrollbar {
   display: none;

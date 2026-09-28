@@ -1,0 +1,261 @@
+[
+  {
+    "id": "2071589906096885760",
+    "name": "Sarmeadors — Multi-Tenant SaaS Recruitment Platform",
+    "category": "SaaS",
+    "services": "Front-end developer",
+    "year": "2026",
+    "link": "https://sarmeadors-frontend.vercel.app/",
+    "color": "#cfd6dd",
+    "accent": "#121210",
+    "description": "Developed a multi-tenant SaaS platform supporting 5+ companies with full recruitment workflow management, customizable dashboards, and role-based access for multiple user types.",
+    "stack": [
+      "Next.js",
+      "TypeScript",
+      "Redux",
+      "Tailwind CSS",
+      "SaaS Development"
+    ],
+    "features": [
+      "Developed a multi-tenant SaaS platform supporting 5+ companies with full recruitment workflow management.",
+      "Built customizable company dashboards with branding, color, and form customization for each tenant.",
+      "Implemented role-based dashboards for 5 user types with protected routing.",
+      "Designed scalable, enterprise-level architecture with reusable components used across multiple company instances."
+    ]
+  },
+  {
+    "id": "2071168825372758016",
+    "name": "Social Media Management — Multi-Tenant Freelancing Platform",
+    "category": "Marketplace",
+    "services": "Full Stack Developer",
+    "year": "2026",
+    "link": "https://social-media-management-omega.vercel.app/",
+    "color": "#e7e2d6",
+    "accent": "#121210",
+    "description": "A multi-tenant freelancing platform where clients can hire freelancers, manage projects, and communicate in real time with live chat and AI support.",
+    "stack": ["Next.js", "Chatbot", "Socket.io", "NestJS", "Stripe"],
+    "features": [
+      "Social Media Management is a multi-tenant freelancing platform where clients can hire freelancers, manage projects, and communicate in real time.",
+      "The platform includes dedicated dashboards for users, clients, freelancers, admins, and super admins.",
+      "Socket.IO-powered live chat and an AI chatbot enable seamless communication and support."
+    ]
+  },
+  {
+    "id": "2072378938202841088",
+    "name": "Axtra Digital Agency | Animated Creative Agency Website with GSAP",
+    "category": "Agency",
+    "services": "Front-end developer",
+    "year": "2026",
+    "link": "https://axtra-digital-agency-zeta.vercel.app/",
+    "color": "#d8cdb8",
+    "accent": "#121210",
+    "description": "A modern, interactive agency website with GSAP-powered scroll animations, page transitions, and premium responsive storytelling for a polished brand experience.",
+    "stack": [
+      "Next.js",
+      "GSAP",
+      "Animation Software",
+      "Tailwind CSS",
+      "Responsive Design"
+    ],
+    "features": [
+      "Axtra Digital Agency is a modern, interactive, and fully responsive agency website built with a strong focus on user experience and smooth animations.",
+      "Features advanced GSAP-powered scroll-based animations, engaging page transitions, and dynamic visual effects.",
+      "Delivers fast performance, clean code, responsive layouts, and SEO-friendly architecture."
+    ]
+  },
+  {
+    "id": "2071169558906195968",
+    "name": "Gaming Animation — Award-Winning Animated Website",
+    "category": "Interactive",
+    "services": "Front-end Developer",
+    "year": "2026",
+    "link": "https://gaming-animation-gsap.vercel.app/",
+    "color": "#dad0d6",
+    "accent": "#121210",
+    "description": "An award-winning interactive site with premium GSAP animations, cinematic transitions, audio controls, and a highly immersive digital experience.",
+    "stack": ["Next.js", "GSAP", "Music", "Tailwind CSS", "Video Game"],
+    "features": [
+      "Award-winning website featuring premium GSAP animations, smooth scroll-based interactions, and immersive background music.",
+      "Built with an engaging interface that delivers a modern and interactive user experience.",
+      "Includes cinematic transitions, video-driven visual storytelling, and responsive design."
+    ]
+  },
+  {
+    "id": "2072352848563539968",
+    "name": "Telemedicine – Online Doctor Consultation & Appointment Platform",
+    "category": "Healthcare",
+    "services": "Front-end developer",
+    "year": "2026",
+    "link": "https://telemedicine-client.vercel.app/",
+    "color": "#dfe7ed",
+    "accent": "#0f3d3e",
+    "description": "A modern online healthcare platform that connects patients with doctors for appointment booking, specialist search, and virtual consultations from anywhere.",
+    "stack": ["Next.js", "React", "CSS", "Responsive Design", "Tailwind CSS"],
+    "features": [
+      "Patients can search specialists by symptoms or medical conditions.",
+      "Secure appointment booking and doctor consultation workflow.",
+      "User-friendly healthcare experience designed for convenience and trust."
+    ]
+  },
+  {
+    "id": "2071170840781967360",
+    "name": "eBook Solution – Multi-Vendor Super Shop Management System",
+    "category": "E-commerce",
+    "services": "Full Stack Developer",
+    "year": "2026",
+    "link": "https://ezbook-solution.vercel.app/",
+    "color": "#e6dfd7",
+    "accent": "#2d2d2d",
+    "description": "A multi-vendor super shop management system where sellers manage products, orders, sales, and inventory through one centralized platform.",
+    "stack": [
+      "Socket.io",
+      "PostgreSQL",
+      "Payment Gateway",
+      "NestJS",
+      "Next.js"
+    ],
+    "features": [
+      "Multi-vendor platform for managing products, inventory, and sales operations.",
+      "Role-based dashboards and secure authentication for vendors and admins.",
+      "Inventory tracking, payment integration, and business insights for retail operations."
+    ]
+  },
+  {
+    "id": "2072369495324659712",
+    "name": "Arion Horse Accessories E-Commerce Platform",
+    "category": "E-commerce",
+    "services": "Front-end developer",
+    "year": "2026",
+    "link": "https://matthieu-frontend.vercel.app/",
+    "color": "#f0ecdf",
+    "accent": "#4f3d2d",
+    "description": "A responsive e-commerce platform for horse owners and equestrian enthusiasts, focused on product discovery, cart flow, and secure checkout.",
+    "stack": [
+      "Next.js",
+      "Payment Gateway",
+      "Tailwind CSS",
+      "Responsive Design",
+      "Modern Style"
+    ],
+    "features": [
+      "Product browsing with search, filtering, and category organization.",
+      "Secure online payment flow and customer-friendly checkout experience.",
+      "Responsive storefront optimized for desktop and mobile shopping."
+    ]
+  },
+  {
+    "id": "2070923757339824128",
+    "name": "Tripazar – Real-Time Flight Booking Platform",
+    "category": "Travel",
+    "services": "Front-end Developer",
+    "year": "2026",
+    "link": "https://tripazar-dusky.vercel.app/",
+    "color": "#dfe8ef",
+    "accent": "#1d3557",
+    "description": "A real-time flight booking platform that integrates third-party APIs to provide flight availability, pricing, and booking management in one experience.",
+    "stack": [
+      "Responsive Design",
+      "Tailwind CSS",
+      "User Authentication",
+      "REST API",
+      "Next.js"
+    ],
+    "features": [
+      "Live flight availability and pricing integration through APIs.",
+      "Simplified booking flow for travelers and automated pricing data.",
+      "Scalable, mobile-friendly interface built for travel discovery and booking."
+    ]
+  },
+  {
+    "id": "2071166267345199104",
+    "name": "Estabiz – Dubai Land Business Platform",
+    "category": "Real Estate",
+    "services": "Front-end Developer",
+    "year": "2026",
+    "link": "https://estabiz-frontend.vercel.app/",
+    "color": "#dfe5df",
+    "accent": "#365c38",
+    "description": "A land business platform for the Dubai real estate market with multi-role dashboards for buying, selling, and managing property listings and transactions.",
+    "stack": [
+      "Next.js",
+      "TypeScript",
+      "User Authentication",
+      "Tailwind CSS",
+      "Dashboard"
+    ],
+    "features": [
+      "Multi-role dashboard supporting real-estate operations and transaction workflows.",
+      "Property listings, managing land sales, and business tracking in one platform.",
+      "Secure and user-friendly interface for real estate operations."
+    ]
+  },
+  {
+    "id": "2070191396613234688",
+    "name": "Chrono Rallye Race – Racing Team Management Platform",
+    "category": "Sports",
+    "services": "Front-end Developer",
+    "year": "2026",
+    "link": "https://zezeben-frontend.vercel.app",
+    "color": "#efe5e1",
+    "accent": "#611a1a",
+    "description": "A car racing team management platform where players build squads using a budget system, compete in races, and track rankings through a dashboard.",
+    "stack": [
+      "Next.js",
+      "Responsive Design",
+      "Tailwind CSS",
+      "User Authentication",
+      "Dashboard"
+    ],
+    "features": [
+      "Budget-based team creation system with drivers and vehicles selection.",
+      "Interactive race organization and competition management flow.",
+      "Performance tracking and rankings dashboard for racing teams."
+    ]
+  },
+  {
+    "id": "2070190172870602752",
+    "name": "Client Bridge – Recruitment & Hiring Platform",
+    "category": "Recruitment",
+    "services": "Front-end Developer",
+    "year": "2026",
+    "link": "https://client-bridge-plum.vercel.app/",
+    "color": "#e3e0d8",
+    "accent": "#3b3b3b",
+    "description": "A recruitment platform connecting companies and candidates through job posting, company profiles, and application tracking.",
+    "stack": [
+      "Next.js",
+      "Blog",
+      "Responsive Design",
+      "Animation",
+      "Tailwind CSS"
+    ],
+    "features": [
+      "Companies can showcase details and post job openings to attract candidates.",
+      "Candidates explore companies and track application status.",
+      "A streamlined hiring experience built for efficient talent discovery."
+    ]
+  },
+  {
+    "id": "2071168197737107456",
+    "name": "Malnaqbi – App Management Dashboard",
+    "category": "Dashboard",
+    "services": "Front-end Developer",
+    "year": "2026",
+    "link": "https://malnaqbi89.vercel.app/",
+    "color": "#e7e5ee",
+    "accent": "#19273a",
+    "description": "An app management dashboard for managing users, content, analytics, and settings through a secure, role-based interface.",
+    "stack": [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Payment Gateway",
+      "Dashboard"
+    ],
+    "features": [
+      "Centralized management for user, content, and application operations.",
+      "Secure, role-based access for multi-admin workflows.",
+      "Analytics and configuration tools built for operational control."
+    ]
+  }
+]

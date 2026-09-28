@@ -6,6 +6,17 @@ import { profile } from "@/data/profile";
 
 const LINE_1 = "Building scalable";
 const LINE_2 = "web apps and experiences";
+const ORBIT_WORDS = [
+  "Thinking",
+  "Code",
+  "React",
+  "Next.js",
+  "Node.js",
+  "Nest.js",
+  "TypeScript",
+  "Tailwind",
+  "GSAP",
+];
 
 function splitWords(text: string) {
   return text.split(" ");
@@ -159,9 +170,24 @@ export default function Hero() {
         className="relative mt-6 md:mt-10 mx-auto w-full max-w-[1600px] h-[46vh] md:h-[64vh] overflow-hidden"
         style={{ filter: "url(#portraitDistort)" }}
       >
-        {/* real portrait, extracted from the CV */}
+        <div className="pointer-events-none absolute left-1/2 top-[30%] z-10 h-[14vw] w-[14vw] max-h-[150px] max-w-[150px] -translate-x-1/2 -translate-y-1/2 md:h-[30vw] md:w-[30vw] md:max-h-[250px] md:max-w-[250px]">
+          <div className="orbit-ring">
+            {ORBIT_WORDS.map((word, index) => (
+              <span
+                key={word}
+                className="orbit-word"
+                style={{
+                  transform: `translate(-50%, -50%) rotate(${(360 / ORBIT_WORDS.length) * index}deg) translateY(-150px)`,
+                }}
+              >
+                {word}
+              </span>
+            ))}
+          </div>
+        </div>
+
         <img
-          src="/images/mahmudul-portrait.jpg"
+          src="/images/mahmudul-portrait.png"
           alt="Mahmudul Hasan"
           className="absolute left-1/2 top-0 -translate-x-1/2 h-full w-auto object-cover grayscale contrast-110 opacity-95"
         />
